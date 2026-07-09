@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Travel Blogs</title>
+  <meta name="description" content="Personal travel blogs and stories from journeys around the world." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --panel-blue: #89c2d9;
+      --panel-blue-dark: #5a9ec1;
+      --card-title-blue: #1e5a8a;
+      --text-light: #ffffff;
+      --card-bg: #ffffff;
+      --muted: #5a6a7a;
+      --radius: 0.625rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--panel-blue);
+      color: var(--text-light);
+      min-height: 100vh;
+      padding: 4rem 1rem;
+    }
+
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    .emoji-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.125rem;
+      opacity: 0.85;
+      margin-bottom: 2.5rem;
+    }
+
+    .blog-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .blog-card {
+      display: block;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    }
+
+    .blog-card h2 {
+      color: var(--card-title-blue);
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-card p {
+      color: var(--muted);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2.5rem;
+      color: var(--text-light);
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      body { padding: 2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji-row">
+      <span>🇬🇧</span>
+      <span>🎬</span>
+      <span>✈️</span>
+    </div>
+
+    <h1>My personal travel blogs</h1>
+    <p class="subtitle">Stories from the road</p>
+
+    <div class="blog-list">
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>1. Bag packing through the Balkans</h2>
+        <p>A backpacking journey across the Balkans — mountains, old towns and everything in between.</p>
+      </a>
+
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>2. From the old world to the new: A journey through the west</h2>
+        <p>From historic cities to modern metropolises — a journey bridging old traditions and new horizons.</p>
+      </a>
+
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>3. Life in Japan - 8 weeks as an intern</h2>
+        <p>Two months living and working in Japan — culture shock, convenience stores and endless discoveries.</p>
+      </a>
+
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>4. Living the American Dream PT.1</h2>
+        <p>The first leg of an American adventure — road trips, diners and wide open spaces.</p>
+      </a>
+
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>5. Living the American Dream PT.2</h2>
+        <p>Part two continues through new states, new faces and the unmistakable energy of the USA.</p>
+      </a>
+
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>6. A journey through the east</h2>
+        <p>From ancient temples to bustling markets — exploring the diverse cultures of the East.</p>
+      </a>
+
+      <a class="blog-card" href="https://liamblacktravel.wordpress.com/blog/" target="_blank" rel="noopener noreferrer">
+        <h2>7. Chasing the Northern Lights in Scandinavia</h2>
+        <p>Snowy nights and green skies while chasing the aurora across Scandinavia.</p>
+      </a>
+    </div>
+
+    <a class="back-link" href="Portfolio.HTML">← Back to Selection</a>
+  </div>
+</body>
+</html>
